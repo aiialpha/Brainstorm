@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Open+Sans", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  color: #555;
+  overflow-x: hidden;
+}
+nav{
+  display: flex;
+  background-color: hwb(240 51% 28% / 0.836);
+  height: 4.2rem;
+}
+aside{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.hide-on-desktop{
+  display: none;
+}
+.hide-on-desktop a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+.container{
+  padding: 0;
+}
+#top-nav{
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+.top-nav-img{
+  height: auto;
+}
+.top-nav-link{
+  display: flex;
+  width:70%
+}
+.top-nav-link ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.top-nav-link li{
+  color: black;
+}
+.top-nav-link li:hover, .top-nav-link li:active{
+  color: white;
+}
+.top-nav-social{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+  font-size: 1.3em;
+  color: black;
+
+}
+i{
+  color: black;
+}
+i:hover, i:active{
+  color: whitesmoke;
+}
+
+a{
+  text-decoration: none;
+}
+#active{
+  color: white;
+}
+
+
+
+
+
+
+.logo{
+  height: 4rem;
+  float: right;
+}
+
+
+
+
+
+footer{
+  background-color: black;
+}
+
+
+/* The media quaries */
+@media (max-width:767px) {
+  aside{
+    display: none;
+  }
+  #top-nav{
+    justify-content: space-between;
+  }
+  .top-nav-img{
+    margin-left: 10px;
+  }
+  .hide-on-desktop{
+    display: flex;
+  }
+}

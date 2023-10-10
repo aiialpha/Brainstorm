@@ -29,14 +29,7 @@ aside{
   margin-right: 20px;
 }
 .line{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
+  display: none;
 }
 .container{
   padding: 0;
@@ -113,7 +106,47 @@ footer{
 
 /* The media quaries */
 @media (max-width:767px) {
+  .top-nav-link{
+    position:absolute;
+    width: 100%;
+  }
+  .top-nav-link .open{
+    right: 0;
+    transition: 0.4s;
+    padding-top:10px;
+    height: 400px;
+  }
+  .color{
+
+    background-color: aqua;
+    /* transition: 1s; */
+  }
   aside{
+    justify-content: flex-end;
+  }
+  .top-nav-link ul{
+    display: block;
+    list-style: disc;
+    padding-left: 16px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 10px;
+    top: 57px;
+    right: 800px;
+  }
+  .top-nav-link li{
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .top-nav-link li:hover{
+    background-color: #555;
+
+  }
+  .top-nav-social{
     display: none;
   }
   #top-nav{
@@ -121,6 +154,13 @@ footer{
   }
   .top-nav-img{
     margin-left: 10px;
+  }
+  .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    margin-right: 20px;
   }
   .hide-on-desktop{
     display: flex;

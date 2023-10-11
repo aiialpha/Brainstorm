@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BRAINSTORM IT SOLUTIONS</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="shortcut icon" href="asset/img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -49,29 +49,27 @@
     </div>
   </nav>
   <main>
-    <div class="container-fluid">
-      <h2 class="text-center mt-5">BRAINSTORM IT SOLUTIONS</h2>
+    <div class="container">
+      <!-- <h2 class="text-center mt-5">BRAINSTORM IT SOLUTIONS</h2> -->
+      <div class="vid-background">
+        <video autoplay loop muted>
+          <source src="background.mp4" type="video/mp4">
+          sorry your browser deoent support videos
+        </video>
+        <div class="overlay">
+          <h3 class="over-vid text-center"> Welcome To The Innovation Hub</h3>
+          <a type="button" id="over-vid-btn" class="text-center" >Want to know more ?</a>
+        </div>
+
+        </div>
+      </div>
     </div>
   </main>
   <footer>
     <div>
     </div>
   </footer>
-  <script>
-    let menu = document.querySelector("#menu");
-    let navmenu = document.querySelector("ul");
-    let navHead = document.querySelector("#nav")
-
-     menu.onclick = () => {
-    // Toggle the "bx-menu" and "bx-x" classes on the menu icon
-       menu.querySelector("i").classList.toggle("bx-menu");
-      menu.querySelector("i").classList.toggle("bx-x");
-
-
-   // Toggle the "open" class on the navigation menu
-       navmenu.classList.toggle("open");
-       navHead.classList.toggle("color")
-       };
+  <script src="js/scripti.js">
   </script>
 </body>
 </html>

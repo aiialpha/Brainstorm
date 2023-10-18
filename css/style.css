@@ -1,17 +1,30 @@
+:root {
+  --text-color: #fff;
+  --btn-color: #D52F2B;
+  --primary-color: #236D9D;
+  --link-color: #131212;
+  --head-color:#111111;
+
+}
 *{
   box-sizing: border-box;
 }
 body{
   font-family: "Open+Sans", sans-serif;
   line-height: 1;
-  font-weight: 600;
-  color: #555;
+  height: 100%;
   overflow-x: hidden;
+}
+header{
+  background-color: var(--text-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 4.2rem;
 }
 nav{
   display: flex;
-  background-color: hwb(240 51% 28% / 0.836);
-  height: 4.2rem;
 }
 aside{
   display: flex;
@@ -36,11 +49,11 @@ aside{
 }
 #top-nav{
   display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
+  justify-content: space-between;
 }
 .top-nav-img{
   height: auto;
+  margin-left: 20px;
 }
 .top-nav-link{
   display: flex;
@@ -58,31 +71,115 @@ aside{
 }
 .top-nav-link li{
   color: black;
+  font-size: 1em;
+  font-weight: 550;
 }
 .top-nav-link li:hover, .top-nav-link li:active{
-  color: white;
+  color: var(--primary-color);
 }
 .top-nav-social{
   display: flex;
   align-items: center;
   width: 20%;
   justify-content: space-between;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: black;
-
 }
-i{
+.logo{
+  height: 4rem;
+  float: right;
+}
+ .top-nav-social i{
   color: black;
 }
 i:hover, i:active{
-  color: whitesmoke;
+  color: var(--primary-color);
 }
 
 a{
   text-decoration: none;
 }
 #active{
-  color: white;
+  color: var(--primary-color);
+}
+main{
+  width: 100%;
+}
+.container{
+  margin: 0;
+}
+.vid-background{
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+}
+video{
+  height: auto;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.overlay{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  top: 70%;
+}
+#over-vid-btn{
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  border-radius: 6px;
+  align-items: center;
+  font-size: 1.2em;
+  width: 20%;
+  height: 40px;
+}
+.over-vid{
+  font-weight: 600;
+  color: var(--text-color);
+}
+.over-vid span{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.context h1{
+  color: var(--head-color);
+  font-weight: 700;
+  padding-bottom: 0;
+  font-size: 3.7rem;
+  margin-top:5rem;
+  margin-bottom: 5px;
+}
+.context p{
+  margin-top: 1em;
+}
+.divider{
+  height: 3px;
+  border-radius: 7px;
+  width: 150px;
+  background-color: #D52F2B;
+  margin: 0 auto ;
+}
+#moving{
+  height:100px;
+  padding: 10px;
+}
+.owl-carousel{
+  display: flex;
+}
+.owl-item1{
+  height: 100%;
+  padding-left: 5px;
+}
+.owl-item1 img{
+  height: 7rem;
+  margin-left: -5px;
 }
 
 
@@ -90,21 +187,151 @@ a{
 
 
 
-.logo{
-  height: 4rem;
-  float: right;
+.subscribe{
+  background-color: var(--primary-color);
+  height: 15em;
+  padding: 30px;
+  padding-top: 45px;
 }
-
-
-
-
+label{
+  font-weight: 600;
+  color: var(--head-color);
+  font-size: 16px;
+}
+input[type="text"]{
+  height: 45px;
+  width: 97%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+input[type="submit"]{
+  background-color: var(--btn-color);
+  height: 50px;
+  width: 120px;
+  color: var(--text-color);
+  border: none;
+  font-weight: 400;
+  font-size: 17px;
+}
 
 footer{
-  background-color: black;
+  background-color: var(--head-color);
+  padding: 20px;
+  margin-bottom: -1px;
 }
-
-
+#foot{
+  color: var(--text-color);
+  margin-top: 0.3em;
+  font-size: 5rem;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.content h3, h4{
+  color: var(--text-color);
+}
+.footer-social{
+  margin-bottom:10px
+}
+.contact i{
+  padding-left: 10px;
+  font-size: 2em;
+  /* width: 10px; */
+  height: 30px;
+  color: var(--text-color);
+}
+a[type="button"]{
+  display: flex;
+  align-items: center;
+  padding:20px 25px;
+  justify-content: center;
+  color: var(--link-color);
+  background-color: var(--text-color);
+  margin-bottom: 30px;
+  border-radius: 7px;
+  font-weight: 550;
+  text-align: center;
+  font-size: 1.5rem;
+}
+a[type="button"]:hover{
+  background-color: var(--btn-color);
+}
+hr{
+  color: var(--text-color);
+  margin: 0;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+.last{
+  color: var(--text-color);
+  margin-top:30px;
+  padding-bottom:30px;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+#call{
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#b-email{
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-align: center;
+}
+footer .row{
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-left: 4em;
+}
+.col-12, .col-sm-3 h5{
+  padding-left: 5px;
+}
+.col-12 img{
+  height: 4rem;
+}
+.col-12,.col-sm-3 p{
+  line-height: 1.5em;
+  color: var(--text-color);
+}
+.col-12,.col-sm-3 ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+.col-12 li{
+  margin-bottom: 0.6em;
+  color: var(--text-color);
+  padding-left: 8px;
+}
+#btn-top{
+  position: absolute;
+  bottom: 100% ;
+  right:50%;
+}
 /* The media quaries */
+/* @media (max-width:){
+  .vid-background{
+    height: 20rem;
+  }
+  .overlay{
+    top: 20%;
+  }
+} */
 @media (max-width:767px) {
   .top-nav-link{
     position:absolute;
@@ -164,5 +391,69 @@ footer{
   }
   .hide-on-desktop{
     display: flex;
+  }
+  .vid-background{
+    height: 200px;
+  }
+  .overlay{
+    top: 22%;
+  }
+  #over-vid-btn{
+    width: 45%;
+    height: 35px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .context h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1em;
+  }
+  .divider{
+    width: 30%;
+  }
+  #foot{
+    font-size: 3rem;
+    text-align: center;
+  }
+  footer .row{
+    padding-left: 9px;
+  }
+  #call{
+    font-size: 1.8rem;
+  }
+  #b-email{
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 990px) {
+.vid-background{
+  height: 25rem;
+}
+#over-vid-btn{
+  width: 40%;
+}
+}
+@media(max-width:540px){
+  .vid-background{
+    height: 250px;
+  }
+}
+@media (max-width:250px){
+  #over-vid-btn{
+    width:20%
+  }
+  .context h1{
+    font-size: 16px;
+  }
+}
+@media (max-width:290px){
+  .vid-background{
+    height: 150px;
+  }
+  #over-vid-btn{
+    width:30%;
+    font-weight: 100;
+    font-size: small;
   }
 }

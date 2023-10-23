@@ -107,19 +107,10 @@ video{
   z-index: 1;
 }
 
-
-
-
-
-
 .logo{
   height: 4rem;
   float: right;
 }
-
-
-
-
 
 footer{
   background-color: black;
@@ -187,4 +178,36 @@ footer{
   .hide-on-desktop{
     display: flex;
   }
+} 
+/* ========================================================== */  
+/* .our-services{
+
+ 
+} 
+.our-services h1{ 
+  text-align: center; 
 }
+.our-services h2{
+  text-align: center;
+} 
+.card{
+  display: flex; 
+ 
+} 
+.con{
+justify-content: center; 
+align-items: center; 
+
+} 
+.con button{
+  width: 100%; 
+  margin-top: 1rem; 
+  border-radius: 20px; 
+  padding: 1em;
+} 
+.con button:hover{
+  background-color: white;
+} 
+.con button:active {
+  background-color: red;
+} */

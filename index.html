@@ -7,12 +7,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,700;1,800;1,900 display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,7 +32,7 @@
         <div class="top-nav-link">
           <ul class="">
             <a href=""><li id="active">Welcome</li></a>
-            <a href=""><li>Services</li></a>
+            <a href=""><li>About Us</li></a>
             <a href=""> <li>Our Client</li></a>
             <a href=""><li>Contact us</li></a>
             <a href=""><li>Who we are</li></a>
@@ -51,7 +56,6 @@
   </nav>
   </header>
   <main>
-   
       <!-- <h2 class="text-center mt-5">BRAINSTORM IT SOLUTIONS</h2> -->
       <div class="vid-background" id="top">
         <video autoplay loop muted>
@@ -79,7 +83,7 @@
     <!-- Set up your HTML -->
    <div class="container-fluid" id="moving">
     <div class="owl-carousel">
-      <div class="owl-item1"><img src="img/1.jpg" alt="" srcset=""></div>
+      <!-- <div class="owl-item1"><img src="img/all-team.jpg" alt="" srcset=""></div> -->
       <div class="owl-item1"><img src="img/2.jpg" alt="" srcset=""></div>
       <div class="owl-item1"><img src="img/4.jpg" alt="" srcset=""></div>
       <div class="owl-item1"><img src="img/5.jpg" alt="" srcset=""></div>
@@ -101,8 +105,59 @@
       </h1>
       <div class="divider"></div>
       <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sunt officiis tenetur voluptatem facilis delectus, <br> iure itaque at tempora aperiam laudantium mollitia non consectetur? <br> Deserunt est impedit quis consectetur. Delectus, autem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Sunt officiis tenetur voluptatem facilis delectus,  iure itaque at tempora aperiam laudantium mollitia non consectetur?  Deserunt est impedit quis consectetur. Delectus, autem?
       </p>
+      <div class="services">
+        <div class="service-item"  data-aos="fade-up">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+        <div class="service-item"  data-aos="fade-up" data-aos-duration="1000">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+        <div class="service-item"  data-aos="fade-up" data-aos-duration="1500">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+        <div class="service-item"  data-aos="fade-up" data-aos-duration="2000">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+        <div class="service-item"  data-aos="fade-up" data-aos-duration="2000">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+        <div class="service-item"  data-aos="fade-up" data-aos-duration="2000">
+          <img src="./img/1.jpg" alt="the service">
+          <div>
+            <h3>Web Development</h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam et modi doloremque saepe tempora laudantium quidem ipsum? Vel molestias reprehenderit accusantium earum ipsum libero? Eveniet nemo doloribus aut fuga?</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-talk">
+        <div class="hello" data-aos="zoom-in-down" data-aos-duration="1500">
+          <a href="" title="contact-us">
+            Let's Talk About Your Project
+          </a>
+        </div>
+      </div>
     </div>
     <div class="context">
       <h1 class="text-center">
@@ -110,15 +165,15 @@
       </h1>
       <div class="divider"></div>
       <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Sunt officiis tenetur voluptatem facilis delectus, <br> iure itaque at tempora aperiam laudantium mollitia non consectetur? <br> Deserunt est impedit quis consectetur. Delectus, autem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.  Sunt officiis tenetur voluptatem facilis delectus, iure itaque at tempora aperiam laudantium mollitia non consectetur?  Deserunt est impedit quis consectetur. Delectus, autem?
       </p>
-      <div class="row">
-        <img src="" alt=""></img>
-        <img src="" alt=""></img>
-        <img src="" alt=""></img>
-        <img src="" alt=""></img>
-        <img src="" alt=""></img>
-        <img src="" alt=""></img>
+      <div class="team">
+        <img class="team-img" src="/img/all-team.jpg" alt=""></img>
+        <img class="team-img second" src="/img/all-team.jpg" alt=""></img>
+        <img class="team-img" src="/img/all-team.jpg" alt=""></img>
+        <img class="team-img" src="/img/all-team.jpg" alt=""></img>
+        <img class="team-img second" src="/img/all-team.jpg" alt=""></img>
+        <img class="team-img" src="/img/all-team.jpg" alt=""></img>
       </div>
     </div>
     <div class="context">
@@ -131,46 +186,52 @@
       </p>
       <div class="container-fluid">
         <div class="row" id="news">
-          <div class="news col-md-3 col-6 shadow card">
-           <div class="img-sm">
-            <span >
-              <h2>01</h2>
-              <h5>SEPT 2023</h5>
-            </span>
-             <a href="" class="zoom"><img src="img/1.jpg" alt=""></a>
-           </div>
-            <h3 class="">the news</h3>
-            <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
-          </div>
           <div class="news col-md-3 shadow card">
-           <div class="img-sm">
-            <span >
-              <h2>01</h2>
-              <h5>SEPT 2023</h5>
-            </span>
-             <a href="" class="zoom"><img src="img/1.jpg" alt=""></a>
+            <div class="img-sm">
+             <span >
+               <h2>01</h2>
+               <h5>SEPT 2023</h5>
+             </span>
+              <a href="" class="zoom"><img src="img/all-team.jpg" alt=""></a>
+            </div>
+            <div class="news1">
+             <h2 class="">Two Day Workshop</h2>
+             <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
            </div>
-            <h3 class="">the news</h3>
-            <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
+            </div>
+            <div class="news col-md-3 shadow card">
+              <div class="img-sm">
+               <span >
+                 <h2>01</h2>
+                 <h5>SEPT 2023</h5>
+               </span>
+                <a href="" class="zoom"><img src="img/all-team.jpg" alt=""></a>
+              </div>
+              <div class="news1">
+               <h2 class="">Two Day Workshop</h2>
+               <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
+             </div>
+            </div>
+            <div class="news col-md-3 shadow card">
+                <div class="img-sm">
+                 <span >
+                   <h2>01</h2>
+                   <h5>SEPT 2023</h5>
+                 </span>
+                  <a href="" class="zoom"><img src="img/all-team.jpg" alt=""></a>
+                </div>
+                <div class="news1">
+                 <h2 class="">Two Day Workshop</h2>
+                 <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
+               </div>
+            </div>
           </div>
-          <div class="news col-md-3 shadow card">
-           <div class="img-sm">
-            <span >
-              <h2>01</h2>
-              <h5>SEPT 2023</h5>
-            </span>
-             <a href="" class="zoom"><img src="img/1.jpg" alt=""></a>
-           </div>
-            <h3 class="">the news</h3>
-            <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, rem ullam fugit sit reprehenderit, aliquid, dicta ipsam placeat facere adipisci provident natus dolorem nemo suscipit doloribus. Dicta molestiae quas repellendus.</p>
-          </div>
-        </div>
         </div>
       </div>
     </div>
     <div class="subscribe">
-      <form action="" target="">
-        <label for="emaiil">Subscribe for News & Updates <span>*</span></label><br>
+      <form action="" target="" class="sub-form">
+        <label for="emaiil">Subscribe for News & Updates <span>*</span></label>
         <input type="text" id="email" name="email" placeholder="Enter Email For News And Update">
         <input type="submit" value="SUBSCRIBE">
       </form>
@@ -274,12 +335,28 @@
   <script>
        $(document).ready(function(){
       $(".owl-carousel").owlCarousel({
-         items: 6, // Number of items to display
+        //  items: 6, // Number of items to display
          loop: true, // Loop the carousel
          autoplay: true, // Autoplay the carousel
          autoplayTimeout: 2000, // Autoplay interval in milliseconds
+         responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:3,
+        },
+        1024:{
+            items:6,
+            // loop:false
+        }
+      }
       });
    });
+  </script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>

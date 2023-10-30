@@ -8,6 +8,12 @@
 * {
   box-sizing: border-box;
 }
+p {
+  font-family: 'Mandali', sans-serif;
+}
+h1 h2 h3 h4 h5 h6 {
+  font-family: 'Gurajada', sans-serif;
+}
 body {
   font-family: "Open+Sans", sans-serif;
   line-height: 1;
@@ -16,7 +22,9 @@ body {
 }
 header {
   background-color: var(--text-color);
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
   top: 0;
   left: 0;
   z-index: 2;
@@ -103,157 +111,6 @@ a {
 #active {
   color: var(--primary-color);
 }
-main {
-  width: 100%;
-}
-.container {
-  margin: 0;
-}
-.vid-background {
-  position: relative;
-  width: 100%;
-  height: 40rem;
-  overflow: hidden;
-}
-video {
-  height: auto;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-.overlay {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  align-items: center;
-  top: 70%;
-}
-#over-vid-btn {
-  display: flex;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: whitesmoke;
-  border-radius: 6px;
-  align-items: center;
-  font-size: 1.2em;
-  width: 20%;
-  height: 40px;
-}
-.over-vid {
-  font-weight: 600;
-  color: var(--text-color);
-}
-.over-vid span {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-.context h1 {
-  color: var(--head-color);
-  font-weight: 700;
-  padding-bottom: 0;
-  font-size: 3.7rem;
-  margin-top: 5rem;
-  margin-bottom: 5px;
-}
-.context p {
-  margin-top: 1em;
-}
-.divider {
-  height: 3px;
-  border-radius: 7px;
-  width: 150px;
-  background-color: #d52f2b;
-  margin: 0 auto;
-}
-#moving {
-  /* height:100px; */
-  padding: 10px;
-}
-.owl-carousel {
-  display: flex;
-}
-.owl-item1 {
-  height: 100%;
-  padding-left: 5px;
-}
-.owl-item1 img {
-  height: auto;
-  margin: auto;
-  /* margin-left: -5px; */
-}
-#news {
-  justify-content: space-around;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-}
-.news {
-  background-color: white;
-  border: 1px solid gray;
-  width: 30%;
-  padding: 10px;
-}
-.news span {
-  position: absolute;
-  z-index: 1;
-  text-align: center;
-  top: 2px;
-}
-.news span h2 {
-  font-weight: 700;
-  font-size: 60px;
-  margin: 0;
-}
-.news span h5 {
-  font-size: 18px;
-  font-weight: 600;
-}
-.zoom {
-  position: relative;
-}
-.zoom img {
-  height: 97%;
-  transition: height 0.2s;
-}
-.zoom img:hover {
-  height: 100%;
-}
-
-/* .zoom img:hover{
-  width: 100%;
-} */
-
-.subscribe {
-  background-color: var(--primary-color);
-  height: 15em;
-  padding: 30px;
-  padding-top: 45px;
-  margin-top: 20px;
-}
-label {
-  font-weight: 600;
-  color: var(--head-color);
-  font-size: 16px;
-}
-input[type="text"] {
-  height: 45px;
-  width: 97%;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-input[type="submit"] {
-  background-color: var(--btn-color);
-  height: 50px;
-  width: 120px;
-  color: var(--text-color);
-  border: none;
-  font-weight: 400;
-  font-size: 17px;
-}
-/* ABOUT US SECTION  */
-
 /* MAIN-HOME-SECTION */
 .main-home {
   background-image: url(/Brainstorm/img/about\ us\ background.png);
@@ -347,6 +204,7 @@ input[type="submit"] {
 .mission-image {
   overflow: hidden;
   position: relative;
+  background-color: #b9b7b7;
 }
 
 .mission-image img {
@@ -412,11 +270,208 @@ input[type="submit"] {
   background-color: var(--text-color);
   color: var(--head-color);
 }
+/* mission-section */
+.white {
+  padding: 100px 20px;
+  opacity: 1;
+}
+.white h1 {
+  color: var(--head-color);
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 100px;
+}
+.quoot {
+  margin-top: 50px;
+  text-align: center;
+}
+.quoot i {
+  display: block;
+  font: 700;
+  font-size: 3em;
+  color: var(--btn-color);
+  margin-bottom: 50px;
+}
+.white p {
+  color: var(--head-color);
+  font-weight: 400;
+  font-size: 2em;
+  text-indent: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  opacity: 1;
+}
+.white p span {
+  color: var(--btn-color);
+}
+.straight {
+  width: 10%;
+  background-color: var(--btn-color);
+  height: 2px;
+  margin: auto;
+}
+/* dark-section */
+.dark {
+  padding: 100px 20px 0;
+}
+.dark h1 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 100px;
+}
+.dark .quoot {
+  margin-top: 50px;
+  text-align: center;
+}
+.dark .quoot i {
+  display: block;
+  font: 700;
+  font-size: 3em;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+.dark p {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 2em;
+  text-indent: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  opacity: 1;
+}
+.dark p span {
+  color: var(--btn-color);
+}
 
+.straight-2 {
+  width: 10%;
+  background-color: var(--text-color);
+  height: 2px;
+  margin: auto;
+}
+.back {
+  background-image: url("/Brainstorm/img/monitor.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+.dark {
+  background-image: linear-gradient(#000, #000);
+  height: inherit;
+  opacity: 0.8;
+}
+.dark button {
+  padding: 17px 25px;
+  color: white;
+  font-weight: 700;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  transition: all 0.3s;
+  font-size: 13px;
+  margin: 40px auto;
+  display: block;
+}
+.dark button:hover {
+  color: gray;
+}
+/* Lern-more */
+.learn-more {
+  background-color: var(--primary-color);
+  padding: 100px 250px 20px;
+}
+.starting h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 500%;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.starting p {
+  color: var(--head-color);
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+.starting p span {
+  color: var(--text-color);
+}
+.space {
+  margin-bottom: 50px;
+}
+.bi {
+  display: flex;
+}
+.IP h5 {
+  color: var(--text-color);
+  text-align: right;
+  font-weight: 600;
+}
+.IP {
+  margin-right: 20px;
+}
+.IP p {
+  text-align: right;
+  font-size: 15px;
+  color: var(--head-color);
+}
+.IP h6 {
+  text-align: right;
+  opacity: 0.7;
+  font-size: 0.9em;
+  color: var(--btn-color);
+}
+.serve h5 {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.serve p {
+  font-size: 15px;
+  color: var(--head-color);
+}
+.serve h6 {
+  color: var(--btn-color);
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+.icon {
+  background-color: var(--btn-color);
+  padding: 20px;
+  border-radius: 50px;
+  height:70px;
+}
+.icon i {
+  font-size: 1.8em;
+  color: var(--text-color);
+}
+.icon-2 {
+  background-color: var(--head-color);
+  padding: 20px;
+  border-radius: 50px;
+  height:70px;
+  margin-right: 20px;
+}
+.icon-2 i {
+  font-size: 1.8em;
+  color: var(--text-color);
+}
 footer {
   background-color: var(--head-color);
   padding: 20px;
   margin-bottom: -1px;
+}
+.divider {
+  height: 3px;
+  border-radius: 7px;
+  width: 150px;
+  background-color: #d52f2b;
+  margin: 0 auto;
 }
 #foot {
   color: var(--text-color);
@@ -530,6 +585,17 @@ footer .row {
     height: auto;
     margin-left: 0px;
   }
+  .learn-more {
+  background-color: var(--primary-color);
+  padding: 40px 50px 20px;
+}
+.starting h1 {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 300%;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
   .corporation {
     background-image: url(/Brainstorm/img/pexels-pixabay-41949.jpg);
     height: 100vh;
@@ -561,13 +627,56 @@ footer .row {
     position: absolute;
     width: 100%;
   }
+  .bi {
+  display: block;
+}
+  .white h1 {
+    color: var(--head-color);
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .white p {
+    color: var(--head-color);
+    font-weight: 400;
+    font-size: 2em;
+    text-indent: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .straight {
+    width: 15%;
+    background-color: var(--btn-color);
+    height: 2px;
+    margin: auto;
+  }
+  .dark h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .dark p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 2em;
+    text-indent: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+  }
   .reponsibility {
     background-color: var(--primary-color);
     padding: 20px;
     width: 100%;
     color: var(--text-color);
   }
-   .corporation {
+  .corporation {
     background-image: url(/Brainstorm/img/pexels-pixabay-41949.jpg);
     height: 80vh;
     width: 100%;
@@ -632,18 +741,6 @@ footer .row {
   .hide-on-desktop {
     display: flex;
   }
-  .vid-background {
-    height: 200px;
-  }
-  .overlay {
-    top: 22%;
-  }
-  #over-vid-btn {
-    width: 45%;
-    height: 35px;
-    font-weight: 300;
-    font-size: 12px;
-  }
   .context h1 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -652,15 +749,7 @@ footer .row {
   .divider {
     width: 30%;
   }
-  #news {
-    display: block;
-    width: 100%;
-  }
-  .news {
-    width: auto;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
+
   .img-sm {
     height: 200px;
   }
@@ -675,46 +764,61 @@ footer .row {
     padding-left: 9px;
     margin-top: 1rem;
   }
-  #call {
-    font-size: 1.8rem;
-  }
-  #b-email {
-    font-size: 1.4rem;
+  .white {
+    padding: 100px 10px;
   }
 }
-@media (max-width: 990px) {
-  .vid-background {
-    height: 25rem;
-  }
-  #over-vid-btn {
-    width: 40%;
-  }
-}
+
 @media (max-width: 540px) {
-  .vid-background {
-    height: 250px;
-  }
   .main-home-text {
     position: absolute;
     left: 40px;
     bottom: 280px;
   }
+
+  .white h1 {
+    color: var(--head-color);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .white p {
+    color: var(--head-color);
+    font-weight: 400;
+    font-size: 2em;
+    text-indent: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+  }
+  .white {
+    padding: 100px 5px;
+  }
+  .dark h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .dark p {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 2em;
+    text-indent: 20px;
+    text-align: center;
+    letter-spacing: 1.3;
+    max-width: 100%;
+    margin: auto;
+  }
+  .dark {
+    padding: 5px 5px 13px;
+  }
+  .back {
+  background-image: url("/Brainstorm/img/monitor.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 65vh;
 }
-@media (max-width: 250px) {
-  #over-vid-btn {
-    width: 20%;
-  }
-  .context h1 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 290px) {
-  .vid-background {
-    height: 150px;
-  }
-  #over-vid-btn {
-    width: 30%;
-    font-weight: 100;
-    font-size: small;
-  }
 }

@@ -1,0 +1,504 @@
+:root {
+  --text-color: #fff;
+  --btn-color: #d52f2b;
+  --primary-color: #236d9d;
+  --link-color: #131212;
+  --head-color: #111111;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: "Open+Sans", sans-serif;
+  line-height: 1;
+  height: 100%;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Gurajada', sans-serif;
+}
+header{
+  background-color: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 4.5rem;
+}
+nav {
+  display: flex;
+}
+aside {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+.hide-on-desktop {
+  display: none;
+}
+.hide-on-desktop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.line {
+  display: none;
+}
+.container {
+  padding: 0;
+}
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.top-nav-img {
+  height: auto;
+  margin-left: 20px;
+}
+.top-nav-link {
+  display: flex;
+  width: 70%;
+}
+.top-nav-link ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.top-nav-link li {
+  color: black;
+  font-size: 1em;
+  font-weight: 550;
+}
+.top-nav-link li:hover,
+.top-nav-link li:active {
+  color: var(--primary-color);
+}
+.top-nav-social {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-around;
+  font-size: 1.3em;
+  color: black;
+}
+.logo {
+  height: 4rem;
+  float: right;
+}
+.top-nav-social i {
+  color: black;
+}
+i:hover,
+i:active {
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+#active {
+  color: var(--primary-color);
+}
+main {
+  width: 100%;
+}
+.divider {
+  height: 3px;
+  border-radius: 7px;
+  width: 150px;
+  background-color: #d52f2b;
+  margin: 0 auto;
+}
+
+
+/* SUBSCRIBING TO NEWS LATTER STYLING  */
+
+.subscribe{
+  background-color: var(--primary-color);
+  height: 15em;
+  padding: 30px;
+  padding-top: 45px;
+  margin-top: 20px;
+}
+label {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 18px;
+}
+label span{
+  color: #D52F2B;
+  font-size: 22px;
+}
+input[type="text"]{
+  height: 50px;
+  width: 100%;
+  padding: 5px;
+  margin: 20px auto;
+}
+input[type="text"]:focus{
+  border: white 1px solod;
+}
+input[type="submit"] {
+  background-color: var(--btn-color);
+  height: 50px;
+  width: 120px;
+  color: var(--text-color);
+  border: none;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+/* THE FOOTER STYLING */
+
+footer{
+  background-color: var(--head-color);
+  padding: 20px 20px 23px;
+  margin-bottom: -1px;
+}
+#foot {
+  color: var(--text-color);
+  margin-top: 0.3em;
+  font-size: 5rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.content h3,
+h4 {
+  color: var(--text-color);
+}
+.footer-social {
+  margin-bottom: 10px;
+}
+.contact i {
+  padding-left: 10px;
+  font-size: 2em;
+  /* width: 10px; */
+  height: 30px;
+  color: var(--text-color);
+}
+a[type="button"] {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  justify-content: center;
+  color: var(--link-color);
+  background-color: var(--text-color);
+  margin-bottom: 30px;
+  border-radius: 7px;
+  font-weight: 550;
+  text-align: center;
+  font-size: 1.5rem;
+}
+a[type="button"]:hover {
+  background-color: var(--btn-color);
+}
+hr {
+  color: var(--text-color);
+  margin: 0;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+.last {
+  color: var(--text-color);
+  margin-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+#call {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#b-email {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  text-align: center;
+}
+footer .row {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-left: 4em;
+}
+.col-12,
+.col-sm-3 h5 {
+  padding-left: 5px;
+}
+.col-12 img {
+  height: 4rem;
+}
+footer .footer-p{
+  line-height: 1.5em;
+  margin-left: 0;
+  word-wrap: break-word;
+  color: var(--text-color);
+}
+.col-sm-3, .col-12 ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+.col-12 li {
+  margin-bottom: 0.6em;
+  color: var(--text-color);
+  padding-left: 8px;
+}
+#btn-top {
+  position: relative;
+  top: 20px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  padding: 4px 0 0;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+#btn-top a{
+  color: var(--text-color);
+  font-size:1.5rem;
+  margin:0 auto;
+}
+#up-arrow{
+  font-weight: bold;
+}
+#up-arrow:hover i:hover{
+  color:var(--text-color)
+}
+
+/* THE MEDIA QUARIES */
+
+@media (max-width: 768px) {
+  .top-nav-link {
+    position: absolute;
+    width: 100%;
+  }
+  .top-nav-link .open {
+    right: 0;
+    transition: 0.4s;
+    padding-top: 10px;
+    height: 71vh;
+  }
+  .top-nav-link .open #active{
+    color: var(--text-color);
+  }
+  aside {
+    justify-content: flex-end;
+  }
+  .top-nav-link ul {
+    display: block;
+    list-style: disc;
+    padding-left: 16px;
+    background-color: var(--primary-color);
+    position: absolute;
+    margin-top: 10px;
+    top: 57px;
+    right: 800px;
+    height: 71vh;
+  }
+  .top-nav-link li {
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .top-nav-link li:hover {
+    width:95%;
+    background-color: var(--text-color);
+  }
+  .top-nav-social {
+    display: none;
+  }
+  #top-nav {
+    justify-content: space-between;
+  }
+  .top-nav-img {
+    margin-left: 10px;
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    margin-right: 20px;
+  }
+  .hide-on-desktop {
+    display: flex;
+  }
+  video{
+    height: 80vh;
+  }
+  .overlay {
+    top: 60%;
+  }
+  .over-vid{
+    width: 80%;
+    font-size: 1em;
+  }
+  #over-vid-btn {
+    width: 30%;
+    height: 20px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .context h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1em;
+  }
+  .divider {
+    width: 30%;
+  }
+  #service-link{
+    text-align: center;
+    text-decoration: underline;
+  }
+  .services{
+    display: block;
+  }
+  .service-item{
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+  }
+  .service-item p,h3{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .service-item img{
+    margin: 0 135px;
+  }
+  .hello{
+    width: 50%;
+  }
+ 
+  .hello a:hover::before{
+    width: 50%;
+    position: absolute;
+    margin:10px auto;
+    top: 18px;
+    right: 25px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+  .hello a:hover::after{
+    width: 50%;
+    position: absolute;
+    margin:10px auto;
+    top: 19px;
+    right: 22px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+  .team{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .team-img{
+    width: 87%;
+    margin: 20px auto;
+  }
+  .second{
+    top: 0;
+  }
+  #news{
+    display: block;
+    width: 100%;
+  }
+  .news {
+    width: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .img-sm{
+    height: 240px;
+  }
+  .img-sm img{
+    height: 100%;
+    width:100%;
+  }
+  #foot {
+    font-size: 2rem;
+    text-align: center;
+  }
+  footer .row {
+    padding-left: 9px;
+    margin-top: 1rem;
+  }
+  #call {
+    font-size: 1.6rem;
+  }
+  #b-email {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 990px) {
+  .vid-background {
+    height: 25rem;
+  }
+  .over-vid h3{
+    font-size: 1em;
+  }
+  #over-vid-btn {
+    width: 40%;
+    padding: 10px 10px;
+    height: 30px;
+    font-size: 10px;
+    margin: 5px 0 0;
+  }
+}
+@media (max-width: 540px) {
+  .vid-background {
+    height: 250px;
+  }
+  .main-home-text {
+    position: absolute;
+    left: 40px;
+    bottom: 280px;
+  }
+}
+@media (max-width: 250px) {
+  #over-vid-btn {
+    width: 20%;
+  }
+  .context h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 290px) {
+  .vid-background {
+    height: 150px;
+  }
+  #over-vid-btn {
+    width: 30%;
+    font-weight: 100;
+    font-size: small;
+  }
+}

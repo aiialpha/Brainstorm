@@ -19,7 +19,22 @@ body {
   line-height: 1;
   height: 100%;
   overflow-x: hidden;
+  cursor: url('../img/cursor.jpeg'), auto;
 }
+
+
+/* body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/cursor.jpeg') center center no-repeat;
+  background-size: 50px; Adjust the size based on your preference
+  filter: blur(10px); Adjust the blur radius based on your preference
+  pointer-events: none; Allows clicks to pass through the pseudo-element
+} */
 header {
   background-color: var(--text-color);
   position: fixed;
@@ -113,7 +128,7 @@ a {
 }
 /* MAIN-HOME-SECTION */
 .main-home {
-  background-image: url(/Brainstorm/img/about\ us\ background.png);
+  background-image: url(../img/about\ us\ background.png);
   background-position: center;
   height: 70vh;
   margin-bottom: 100px;
@@ -239,7 +254,7 @@ a {
   height: auto;
 }
 .corporation {
-  background-image: url(/Brainstorm/img/pexels-pixabay-41949.jpg);
+  background-image: url(../img/pexels-pixabay-41949.jpg);
   height: 100vh;
   width: 100%;
   margin-bottom: 30px;
@@ -323,7 +338,7 @@ a {
 }
 
 .background {
-  background-image: url('../img/');
+  background-image: url('../img/award.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -401,7 +416,7 @@ a {
   color: var(--head-color);
   font-size: 1rem;
   line-height: 1.7;
-  max-width: 450px;
+  max-width: 500px;
 }
 
 

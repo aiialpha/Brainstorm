@@ -497,6 +497,7 @@ a[type="button"] {
 }
 a[type="button"]:hover {
   background-color: var(--btn-color);
+  color:var(--text-color)
 }
 hr {
   color: var(--text-color);

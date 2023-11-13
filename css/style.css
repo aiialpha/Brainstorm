@@ -8,7 +8,7 @@
 * {
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Open+Sans", sans-serif;
   line-height: 1;
   height: 100%;
@@ -441,6 +441,166 @@ input[type="submit"] {
   border: none;
   font-weight: 400;
   font-size: 17px;
+}
+/* ABOUT US SECTION  */
+
+/* MAIN-HOME-SECTION */
+.main-home {
+  background-image: url(/Brainstorm/img/about\ us\ background.png);
+  background-position: center;
+  height: 70vh;
+  margin-bottom: 100px;
+}
+.main-home-text {
+  position: absolute;
+  left: 40px;
+  bottom: 200px;
+}
+.main-home-text h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.main-home-text p {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 400;
+  max-width: 700px;
+  transition: all 0.5s;
+  line-height: 1.5;
+  letter-spacing: 0.9rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.1rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 3px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  border: 2px #236d9d;
+  background-color: #fff;
+  color: #555;
+}
+/* SLIDER-SECTION */
+.slider {
+  padding: 50px;
+}
+.slider-image img {
+  width: 70%;
+  height: auto;
+  margin-left: 50px;
+}
+.slider-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 14px;
+}
+.slider-text h1 span {
+  color: var(--btn-color);
+}
+.slider-text p {
+  line-height: 1.7;
+}
+
+/* explore section */
+.explore {
+  background-color: var(--btn-color);
+  height: 320px;
+  padding: 150px 100px 0;
+}
+.explore h1 {
+  font-size: 30px;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.vission {
+  padding: 0 100px 70px;
+  margin-top: -50px;
+}
+.mission {
+  width: 95%;
+  padding: 0;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.mission-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.mission-image img {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.mission-image:hover img {
+  transform: scale(1);
+}
+.mission-text a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+}
+.mission-text a p:hover {
+  color: var(--btn-color);
+}
+.mission-text a p {
+  transition: all 0.3s;
+  color: #333;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.mission-text a img {
+  width: 60px;
+  height: auto;
+}
+.corporation {
+  background-image: url(/Brainstorm/img/pexels-pixabay-41949.jpg);
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 100px;
+}
+.reponsibility {
+  background-color: var(--primary-color);
+  padding: 20px;
+  width: 40%;
+  color: var(--text-color);
+}
+.reponsibility h2 {
+  font-weight: 700;
+}
+.reponsibility p {
+  line-height: 2;
+}
+.reponsibility button {
+  padding: 17px 25px;
+  color: white;
+  font-weight: 700;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  transition: all 0.3s;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.reponsibility button:hover {
+  background-color: var(--text-color);
+  color: var(--head-color);
 }
 
 /* THE FOOTER STYLING */

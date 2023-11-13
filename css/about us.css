@@ -485,12 +485,9 @@ a {
   background-color: var(--head-color);
 }
 
+/* ============================================== MISSION-SITE-SECTOION ============================================================== */
 
-
-/* Media Query for Mobile Devices */
-
-
-/* mission-section */
+/*========= mission-section ========*/
 .white {
   padding: 100px 20px;
   opacity: 1;
@@ -532,7 +529,7 @@ a {
   height: 2px;
   margin: auto;
 }
-/* dark-section */
+/*========= dark-section ==========*/
 .dark {
   padding: 100px 20px 0;
 }
@@ -599,7 +596,7 @@ a {
 .dark button:hover {
   color: gray;
 }
-/* Lern-more */
+/* ======== Lern-more ======= */
 .learn-more {
   background-color: var(--primary-color);
   padding: 100px 250px 20px;
@@ -626,6 +623,11 @@ a {
 }
 .bi {
   display: flex;
+  flex-direction: row;
+}
+.bi-2 {
+  display: flex;
+  flex-direction: row;
 }
 .IP h5 {
   color: var(--text-color);
@@ -682,6 +684,67 @@ a {
   color: var(--text-color);
 }
 
+/* ==========project-talk============== */
+.project-talk{
+  background-color: #111111;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.hello{
+  width: inherit;
+  padding: 2rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.hello a{
+  color: #f2f2f2;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px 0;
+  z-index: 10;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+.hello a::after {
+  content: ""; 
+  display: block; 
+  background-color: #bdbaba;
+  height: 1.5px;
+  margin: 10px 0 0;
+}
+.hello a::before{
+  content: ""; 
+  display: block; 
+  background-color: #bdbaba;
+  height: 1.5px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+.hello:hover a::before{
+  width: 70%;
+  position: absolute;
+  transform-origin: center;
+  margin: auto;
+  top: 10px;
+  right: 70px;
+  z-index: -1;
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+.hello:hover a::after {
+  width: 70%;
+  transform-origin: center;
+  position: absolute;
+  margin: 10px auto;
+  top: 1px;
+  right: 70px;
+  z-index: -1;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
 /* SUBSCRIBING TO NEWS LATTER STYLING  */
 
 .subscribe {
@@ -689,7 +752,7 @@ a {
   height: 15em;
   padding: 30px;
   padding-top: 45px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 label {
   font-weight: 600;
@@ -969,12 +1032,36 @@ footer .row {
   }
 }
 @media (max-width: 768px) {
-  .top-nav-link {
-    position: absolute;
-    width: 100%;
+  .serve {
+    text-align: center;
   }
+  .IP h5 {
+    text-align: center;
+  }
+  .IP p {
+    text-align: center;
+  }
+  .IP h6 {
+    text-align: center;
+  }
+  
   .bi {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .bi-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    height: 70px;
+    width: 70px;
+    margin: auto auto 20px auto;
+  }
+  .icon-2 {
+    height: 70px;
+    width: 70px;
+    margin: auto auto 20px auto;
   }
   .empower .imagination button {
     padding: 17px 25px;
@@ -1057,39 +1144,9 @@ footer .row {
     height: auto;
     margin-bottom: 20px;
   }
-  .top-nav-link .open {
-    right: 0;
-    transition: 0.4s;
-    padding-top: 10px;
-    height: 400px;
-  }
   .color {
     background-color: aqua;
     /* transition: 1s; */
-  }
-  aside {
-    justify-content: flex-end;
-  }
-  .top-nav-link ul {
-    display: block;
-    list-style: disc;
-    padding-left: 16px;
-    background-color: aqua;
-    position: absolute;
-    margin-top: 10px;
-    top: 57px;
-    right: 800px;
-  }
-  .top-nav-link li {
-    display: flex;
-    margin-bottom: 10px;
-    height: 40px;
-    width: 50%;
-    padding-left: 10px;
-    align-items: center;
-  }
-  .top-nav-link li:hover {
-    background-color: #555;
   }
   .top-nav-social {
     display: none;
@@ -1109,6 +1166,50 @@ footer .row {
   }
   .hide-on-desktop {
     display: flex;
+  }
+  .top-nav-link {
+    position: absolute;
+    width: 100%;
+  }
+  .top-nav-link .open {
+    left: 0;
+    transition: 0.4s;
+    padding-top: 10px;
+    height: 71vh;
+  }
+  .top-nav-link .open #active{
+    color: var(--primary-color);
+  }
+  .top-nav-link .open #active:hover{
+    color: var(--text-color);
+  }
+  aside {
+    justify-content: flex-end;
+  }
+  .top-nav-link ul {
+    display: block;
+    list-style: disc;
+    padding-left: 16px;
+    background-color: var(--text-color);
+    position: absolute;
+    margin-top: 10px;
+    top: 57px;
+    left: 800px;
+    height: 71vh;
+    transition: 0.5s;
+  }
+  .top-nav-link li {
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 50%;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .top-nav-link li:hover {
+    width: 96%;
+    color: var(--text-color);
+    background-color: var(--primary-color);
   }
   .context h1 {
     font-size: 1.5rem;

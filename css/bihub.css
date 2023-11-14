@@ -212,8 +212,46 @@ mg
 .column:hover {
     box-shadow: 2px 2px 20px -4px black;
 }
-.column button{
-    font-weight: bold;
+
+.column a:link,
+.column a:link:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--text-color);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.column a:link:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.column a:link:active {
+ transform: translateY(-3px);
+}
+
+.column a:link::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.column a:link:hover::after {
+ background-color: rgb(0, 238, 255);
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
 }
 /* .column:hover {
     background-color: whitesmoke;

@@ -138,7 +138,7 @@ a {
 .main-home-text {
   position: absolute;
   left: 40px;
-  top: 250px;
+  top: 150px;
 }
 .main-home-text h1 {
   color: white;
@@ -809,6 +809,11 @@ h4 {
 }
 .footer-social {
   margin-bottom: 10px;
+  transition: all .5s;
+  transform-origin: down;
+}
+.footer-social i:hover {
+  transform: translate(-6px, 6px);
 }
 .contact i {
   padding-left: 10px;
@@ -817,7 +822,7 @@ h4 {
   height: 30px;
   color: var(--text-color);
 }
-a[type='button'] {
+.contact a[type='button'] {
   display: flex;
   align-items: center;
   padding: 20px 25px;
@@ -829,8 +834,13 @@ a[type='button'] {
   font-weight: 550;
   text-align: center;
   font-size: 1.5rem;
+  transition: all .4s;
 }
-a[type='button']:hover {
+.contact  a[type='button']:active {
+  transform: translateY(16px);
+  box-shadow: 0 2px 5px gray;
+}
+.contact  a[type='button']:hover {
   background-color: var(--btn-color);
   color: var(--text-color)
 }

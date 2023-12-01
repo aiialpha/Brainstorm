@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,700;1,800;1,900 display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact-us.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -32,10 +32,10 @@
         <div class="top-nav-link">
           <ul class="">
             <a href="../index.html"><li >Welcome</li></a>
-            <a href="about us.html"><li>About Us</li></a>
+            <a href="about-us.html"><li>About Us</li></a>
             <a href="services.html"><li>Services</li></a>
             <a href=""><li>Our Client</li></a>
-            <a href=""><li>Bi-Hub</li></a>
+            <a href="bihub.html"><li>Bi-Hub</li></a>
             <a href="contact-us.html"><li id="active">Contact Us</li></a>
           </ul>
         </div>
@@ -53,10 +53,53 @@
   </nav>
   </header>
   <main>
+    <div class="container">
+          <div class="context">
+      <h1>Contact</h1>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates doloremque nisi ratione libero esse id quo quam. Doloribus necessitatibus dolor repellendus, aliquam ullam sequi, fugit itaque dolores eaque, maxime reprehenderit.</p>
+    </div>
+    </div>
+    <div class="container-fluid" id="container">
+      <form action="" class="contact-info">
+        <p>Fields marked with an <span>*</span> are required</p>
+        <label for="name">Name<span>*</span></label>
+        <input type="text" id="name" name="name">
+      <label for="email">Email<span>*</span></label>
+        <input type="text" id="email" name="email">
+        <label for="phone">Phone<span>*</span></label>
+        <input type="text" name="phone" id="phone">
+        <label for="subject">Subject<span>*</span></label>
+        <input type="text" name="subject" id="subject">
+        <label for="description"></label>
+        <textarea name="description" id="description" rows="9 "></textarea>
+        <input type="submit" value="Submit">
+      </form>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7804.9516139656325!2d8.5424389!3d12.0107295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae81328594f96b%3A0x340d174679e52fe2!2sAfrican%20Alliance%20Building!5e0!3m2!1sen!2sng!4v1699969147305!5m2!1sen!2sng" width="550" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container-fluid">
+      <div class="FAQ">
+        <h1>FREQUENT ASKED QUESTION</h1>
+      </div>
+      <ol class="faq-content">
+        <hr class="faq-hr">
+        <li class="question"><h5><span class="arrow-rotate">1</span>FAQ 1</h5></li>
+        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis sint nihil, harum, laboriosam consequatur beatae veritatis dicta doloribus nulla officia accusamus earum illum, eveniet cumque rerum repellendus placeat dolore?</p><hr class="faq-hr">
+        <li class="question"><h5><span class="arrow-rotate">2</span>FAQ 2</h5></li>
+        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis sint nihil, harum, laboriosam consequatur beatae veritatis dicta doloribus nulla officia accusamus earum illum, eveniet cumque rerum repellendus placeat dolore?</p><hr class="faq-hr">
+        <li class="question"><h5><span class="arrow-rotate">3</span>FAQ 3</h5></li>
+        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis sint nihil, harum, laboriosam consequatur beatae veritatis dicta doloribus nulla officia accusamus earum illum, eveniet cumque rerum repellendus placeat dolore?</p><hr class="faq-hr">
+        <li class="question"><h5><span class="arrow-rotate">4</span>FAQ 4</h5></li>
+        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis sint nihil, harum, laboriosam consequatur beatae veritatis dicta doloribus nulla officia accusamus earum illum, eveniet cumque rerum repellendus placeat dolore?</p><hr class="faq-hr">
+        <li class="question"><h5><span class="arrow-rotate">5</span>FAQ 5</h5><i class="arrow right"></i></li>
+        <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis sint nihil, harum, laboriosam consequatur beatae veritatis dicta doloribus nulla officia accusamus earum illum, eveniet cumque rerum repellendus placeat dolore?</p><hr class="faq-hr">
+      </ol>
+      </div>
+    </div>
     <div class="subscribe">
       <form action="" target="" class="sub-form">
         <label for="emaiil">Subscribe for News & Updates <span>*</span></label>
-        <input type="text" id="email" name="email" placeholder="Enter Email For News And Update">
+        <input type="text" id="emaiil" name="emaiil" placeholder="Enter Email For News And Update">
         <input type="submit" value="SUBSCRIBE">
       </form>
     </div>
@@ -139,7 +182,7 @@
       </div>
       <div></div>
       <div class="contact">
-        <a href="" type="button">Contact Us</a>
+        <a href="contact-us.html" type="button">Contact Us</a>
         <div class="footer-social">
           <a href=""><i class='bx bxl-facebook'></i></a>
           <a href=""><i class='bx bxl-linkedin-square'></i></a>
@@ -158,5 +201,29 @@
   </footer>  
   <script src="../js/scripti.js"></script>
   <script>AOS.init();</script>
+  <script>
+let faq = document.querySelectorAll(".question");
+
+faq.forEach(function (question) {
+  question.addEventListener('click', function () {
+    // Close all answers
+    let isAnswerOpen = this.nextElementSibling.classList.contains("open");
+    let allAnswers = document.querySelectorAll(".answer");
+    allAnswers.forEach(function (answer) {
+      answer.classList.remove("open");
+    });
+
+    // Open the answer associated with the clicked question
+    let clickedAnswer = this.nextElementSibling;
+    clickedAnswer.classList.toggle("open", !isAnswerOpen);
+
+    // Toggle the class for the clicked question
+    this.classList.toggle('question-open');
+
+  });
+});
+
+
+  </script>
 </body>
 </html>

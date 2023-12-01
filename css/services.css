@@ -128,6 +128,7 @@ main {
   line-height: 1.6;
   font-size: 1.2em;
   width: 80%;
+  height: 10rem;
   margin-left: auto;
   margin-right:auto ;
   text-align: center;
@@ -138,6 +139,71 @@ main {
   width: 150px;
   background-color: #d52f2b;
   margin: 0 auto;
+}
+#card-container{
+  display: flex;
+  /* margin: 0 40px; */
+  justify-content: space-around;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.img-container{
+  position: relative;
+  margin:20px auto 0;
+  width: 85%;
+}
+.img-container:hover .overlay{
+  height: 100%;
+}
+/* .overlay{
+  position: absolute;
+  left: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  transition: .2s ease;
+  overflow: hidden;
+  background-color: var(--primary-color) ;
+  opacity: 0.7;
+} */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cards a{
+  margin: 30px auto;
+  border-radius: 17px;
+  border: var(--btn-color) solid 1px;
+  color: var(--link-color);
+  padding: 16px ;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  align-content: center;
+}
+.cards a:hover{
+  color: var(--text-color);
+  background-color: var(--btn-color);
+}
+.row{
+  padding: 0;
 }
 
 
@@ -224,6 +290,7 @@ a[type="button"] {
   font-weight: 550;
   text-align: center;
   font-size: 1.5rem;
+  transition: .8s;
 }
 a[type="button"]:hover {
   background-color: var(--btn-color);
@@ -375,28 +442,13 @@ footer .footer-p{
   .hide-on-desktop {
     display: flex;
   }
-  video{
-    height: 80vh;
-  }
-  .overlay {
-    top: 60%;
-  }
-  .over-vid{
-    width: 80%;
-    font-size: 1em;
-  }
-  #over-vid-btn {
-    width: 30%;
-    height: 20px;
-    font-weight: 300;
-    font-size: 12px;
-  }
   .context h1 {
     font-size: 2.2rem;
     font-weight: 600;
+    margin-top: 5rem;
   }
   .context p{
-    width: 95%;
+    width: 90%;
     font-size: 1em;
   }
   .divider {

@@ -121,7 +121,7 @@ main {
   position: relative;
   width: 100%;
   height: 100vh;
-  top: 4.5rem;
+  top: 3.5rem;
   overflow: hidden;
 }
 video {
@@ -233,6 +233,13 @@ video {
   display: flex;
   justify-content: center;
 }
+#wd{
+  height: 70px;
+}
+#sd{
+  height: 65px;
+  width: 110px;
+}
 #ml{
   width: 78px;
   height: 60px;
@@ -292,7 +299,6 @@ video {
 .hello:hover a::before{
   width: 40%;
   position: absolute;
-  /* left: 0; */
   top: 10px;
   right:100px;
   transform: rotate(45deg);
@@ -342,7 +348,7 @@ video {
 .news {
   background-color: white;
   border: .5px solid rgba(143, 140, 140, 0.644);
-  width: 29%;
+  width: 32%;
   padding: 0px 0px 10px;
 }
 .news span {
@@ -364,15 +370,16 @@ video {
   font-weight: 700;
 }
 .news1 h2{
-  padding: 10px 25px;
-  margin: 20px 0 10px;
+  padding: 10px 25px 5px;
+  margin: 20px 0 5px;
   font-weight: 610;
   font-size: 22px;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 .news p{
-  padding: 0 25px 25px;
+  padding: 0 10px 15px;
   line-height: 1.5;
   width: 100%;
   font-size: 1em;
@@ -383,6 +390,7 @@ video {
 .img-sm{
   z-index: 2;
   overflow: hidden;
+  height: 200px;
 }
 .zoom{
   display: block;
@@ -450,7 +458,7 @@ input[type="submit"] {
 
 footer{
   background-color: var(--head-color);
-  padding: 20px 20px 23px;
+  padding: 20px 0px 23px;
   margin-bottom: -1px;
 }
 #foot {
@@ -471,7 +479,7 @@ h4 {
 }
 .footer-social {
   display: flex;
-  width: 20%;
+  /* widhp[kj                   th: 20%; */
   justify-content: space-between;
   margin-bottom: 10px;
 }
@@ -497,6 +505,7 @@ a[type="button"] {
   font-weight: 550;
   text-align: center;
   font-size: 1.5rem;
+  transition: .8s;
 }
 a[type="button"]:hover {
   background-color: var(--btn-color);
@@ -535,26 +544,30 @@ hr {
   text-align: center;
 }
 footer .row {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  padding-left: 4em;
+  margin: 5em auto;
+  width: 98%;
 }
-.col-12,
-.col-sm-3 h5 {
-  padding-left: 5px;
+.col-12 h5 {
+  padding-left: 50px;
+  margin: 0;
+  color: var(--text-color);
 }
 .col-12 img {
   height: 4rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
 }
 footer .footer-p{
   line-height: 1.5em;
-  margin-left: 0;
+  margin: 0;
+  width: 97%;
   word-wrap: break-word;
   color: var(--text-color);
 }
-.col-sm-3, .col-12 ul{
+.col-sm-3 ul{
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 50px;
   margin-top: 2em;
 }
 .col-12 li {
@@ -588,15 +601,23 @@ footer .footer-p{
 /* THE MEDIA QUARIES */
 
 @media (max-width: 768px) {
+  header{
+    height: 3.5rem;
+    margin-bottom: -1px;
+  }
+  .logo{
+    height: 3rem;
+  }
   .top-nav-link {
     position: absolute;
     width: 100%;
   }
   .top-nav-link .open {
     left: 0;
+    margin-top: -1px;
     transition: 0.4s;
     padding-top: 10px;
-    height: 71vh;
+    height: 75vh;
   }
   .top-nav-link .open #active{
     color: var(--primary-color);
@@ -611,7 +632,7 @@ footer .footer-p{
     background-color: var(--text-color);
     position: absolute;
     margin-top: 10px;
-    top: 57px;
+    top: 55px;
     left: 800px;
     height: 71vh;
     transition: 0.5s;
@@ -634,6 +655,8 @@ footer .footer-p{
   }
   #top-nav {
     justify-content: space-between;
+    height: 80%;
+    padding: 2px 0 0 ;
   }
   .top-nav-img {
     margin-left: 10px;
@@ -649,28 +672,32 @@ footer .footer-p{
     display: flex;
   }
   .vid-container{
-    height: 80vh;
+    height: 80dvh;
   }
   video{
-    height: 70vh;
+    height: 75dvh;
   }
   .overlay {
-    top: 50%;
+    top: 65%;
+    row-gap: 10px;
   }
   .over-vid{
-    width: 80%;
-    font-size: 1em;
+    width: 90%;
+    font-size: 1.2em;
+  }
+  .over-vid span{
+    font-weight: 900;
   }
   #over-vid-btn {
-    width: 30%;
-    height: 20px;
-    font-weight: 300;
-    font-size: 12px;
+    width: 50%;
+    height: 25px;
+    font-weight: 400;
+    font-size: 14px;
   }
   .context h1 {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 0.5em;
+    margin-top: 1.4em;
   }
   .context p{
     width: 96%;
@@ -678,8 +705,11 @@ footer .footer-p{
   .divider {
     width: 30%;
   }
+  #moving{
+    margin-bottom: 50px;
+  }
   .owl-item .owl-item1 img{
-    width: 45%;
+  height: 8rem;  
   }
   #service-link{
     text-align: center;
@@ -705,6 +735,13 @@ footer .footer-p{
     height: 88px;
     width: 88px;
   }
+  #wd{
+    height: 78px;
+    width: 88px;
+  }
+  #sd{
+    height: 75px;
+  }
   #ml{
     width: 80px;
     height: 70px;
@@ -712,23 +749,15 @@ footer .footer-p{
   .hello{
     width: 50%;
   }
-  .hello a:hover::before{
-    width: 50%;
+  .hello a:active::before{
+    /* width: 50%; */
     position: absolute;
-    margin:10px auto;
-    top: 18px;
-    right: 25px;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+    transform: rotate(0deg);
   }
-  .hello a:hover::after{
-    width: 50%;
+  .hello a:active:after{
+    /* width: 50%; */
     position: absolute;
-    margin:10px auto;
-    top: 19px;
-    right: 22px;
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
+    transform: rotate(0deg);
   }
   .team{
     flex-direction: column;
@@ -736,6 +765,7 @@ footer .footer-p{
   }
   .team-img{
     width: 87%;
+    height: 350px;
     margin: 20px auto;
   }
   .second{
@@ -763,8 +793,22 @@ footer .footer-p{
     text-align: center;
   }
   footer .row {
-    padding-left: 9px;
+    padding-left: 0px;
+    margin-top: 0rem;
+  }
+  .col-sm-3, .col-12 ul{
     margin-top: 1rem;
+    padding: 0 0 0 5px;
+  }
+  .col-sm-3 h5{
+    padding: 0 0 0 13px;
+  }
+  .col-12 img{
+    display: block;
+    margin: 0 auto;
+  }
+  footer .footer-p{
+    margin: 0 auto;
   }
   #call {
     font-size: 1.6rem;
@@ -780,12 +824,8 @@ footer .footer-p{
   .over-vid h3{
     font-size: 1em;
   }
-  #over-vid-btn {
-    width: 40%;
-    padding: 10px 10px;
-    height: 30px;
-    font-size: 10px;
-    margin: 5px 0 0;
+    .owl-item .owl-item1 img{
+    width: 50%;
   }
 }
 @media (max-width: 540px) {
@@ -800,23 +840,15 @@ footer .footer-p{
   .hello a{
     font-size: 0.8rem;
   }
-  .hello a:hover::before{
-    width: 35%;
+  .hello a:active::before{
+    /* width: 35%; */
     position: absolute;
-    margin:10px auto;
-    top: 6px;
-    right: 50px;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
+    transform: rotate(0deg);
   }
-  .hello a:hover::after{
-    width: 35%;
+  .hello a:active::after{
+    /* width: 35%; */
     position: absolute;
-    margin:10px auto;
-    top: 6px;
-    right: 50px;
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
+    transform: rotate(0deg);
   }
 }
 @media (max-width: 250px) {
